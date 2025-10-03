@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Birthday Surprise</title>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Quantico&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div id="intro">
+     <h1 class="greeting">Happy 1st Birthday Elizabeth 🎂</h1>
+     <button id="surpriseBtn" class="cta">Click for a Surprise!</button>
+    </div>
+    
+    <div id="cakeScene" class="hidden">
+       <div class="cake">
+         <div class="plate"></div>
+         <div class="layer layer-bottom"></div>
+         <div class="layer layer-middle"></div>
+         <div class="layer layer-top"></div>
+         <div class="icing"></div>
+         <div class="sprinkles"></div>
+         <div class="candle">
+           <div class="flame"></div>
+           <div class="smoke"></div>
+         </div>
+       </div>
+
+       <button id="wishBtn" class="cta hidden">Tap to Make a Wish ✨</button>
+       <h2 id="message" class="hidden">Yay! You've made your first birthday wish. Your years will be magical! 🎂</h2>
+       <canvas id="confetti"></canvas>
+    </div>   
+  </div>
+
+  <audio id="birthdaySong" src="birthday-song.mp3" loop preload="auto"></audio>
+
+  
+  <script src="script.js"></script>
+</body>
+</html>
