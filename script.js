@@ -73,11 +73,15 @@ wishBtn.addEventListener("click", () => {
   smoke.classList.add("active"); // smoke animates
   message.textContent = "Yay! You've made your first birthday wish 🎉 Your years are going to be magical!";
   flame.classList.add("hidden"); 
+  
+
   setTimeout(() => {
      message.classList.remove("hidden"); 
      startConfetti(); 
      birthdaySong.play(); 
     }, 500); 
+
+
   // Trigger confetti
   confettiParticles = [];
   for (let i = 0; i < 150; i++) {
